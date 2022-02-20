@@ -1,4 +1,4 @@
-package eberron.lightningrail.lightningraildistance;
+package eberron.lightningrail.distance;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
