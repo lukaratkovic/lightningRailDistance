@@ -27,7 +27,7 @@ public class Database {
         List<Location> locations = new ArrayList<>();
         try(Connection connection = connect()){
             Statement query = connection.createStatement();
-            ResultSet locationResultSet = query.executeQuery("SELECT * FROM LOCATION");
+            ResultSet locationResultSet = query.executeQuery("SELECT * FROM LOCATION ORDER BY NAME");
             while(locationResultSet.next()){
                 Integer id = locationResultSet.getInt("ID");
                 String name = locationResultSet.getString("NAME");

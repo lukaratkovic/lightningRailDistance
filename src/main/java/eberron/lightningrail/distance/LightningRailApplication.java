@@ -12,7 +12,7 @@ public class LightningRailApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LightningRailApplication.class.getResource("lightning-rail-prices.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Lightning Rail Price Calculator");
+        stage.setTitle("Lightning Rail Calculator");
         stage.setScene(scene);
         stage.show();
     }
